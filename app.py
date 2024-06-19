@@ -15,7 +15,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 # Gráfico de dispersión precio vs año 
 st.header("Precio vs Año")
-fig = px.scatter(data, x="year", y="price")
+fig = px.scatter(data, x="model_year", y="price")
 st.plotly_chart(fig, use_container_width=True)
 
 # Histograma de precios
@@ -29,5 +29,5 @@ if show_hist:
 st.header("Precio vs Año") 
 show_scatter = st.checkbox("Mostrar Gráfico de Dispersión Precio vs Año")
 if show_scatter:
-    fig = px.scatter(data, x="year", y="price")
+    fig = px.scatter(data, x="model_year", y="price")
     st.plotly_chart(fig, use_container_width=True)
